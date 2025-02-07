@@ -116,13 +116,13 @@ if DATABASE_URL:
         del qbit_opt['_id']
         qbit_options = qbit_opt
     conn.close()
-    BOT_TOKEN = environ.get('BOT_TOKEN', '7857513137:AAEwY8WAci5znpmhv8wb8_NGszrZVU9XVE8')
+    BOT_TOKEN = environ.get('BOT_TOKEN', '7308666672:AAH0VKc9mizxVZOMCaRmPdTNU2GEhnzWpR0')
     bot_id = BOT_TOKEN.split(':', 1)[0]
     DATABASE_URL = environ.get('DATABASE_URL', 'mongodb+srv://Terabox:aloksingh@terabox.rmk69.mongodb.net/?retryWrites=true&w=majority')
 else:
     config_dict = {}
 
-OWNER_ID = environ.get('OWNER_ID', '8108281129')
+OWNER_ID = environ.get('OWNER_ID', '2093552866')
 if len(OWNER_ID) == 0:
     log_error("OWNER_ID variable is missing! Exiting now")
     exit(1)
@@ -182,7 +182,7 @@ if AUTHORIZED_CHATS:
         if topic_ids:
             user_data[chat_id].setdefault('topic_ids', []).extend(map(int, topic_ids))
 
-SUDO_USERS = environ.get('SUDO_USERS', '')
+SUDO_USERS = environ.get('SUDO_USERS', '8108281129')
 if len(SUDO_USERS) != 0:
     aid = SUDO_USERS.split()
     for id_ in aid:
@@ -207,7 +207,7 @@ MIRROR_LOG_ID = environ.get('MIRROR_LOG_ID', '')
 if len(MIRROR_LOG_ID) == 0:
     MIRROR_LOG_ID = ''
     
-LEECH_LOG_ID = environ.get('LEECH_LOG_ID', '-1002414918127')
+LEECH_LOG_ID = environ.get('LEECH_LOG_ID', '')
 if len(LEECH_LOG_ID) == 0:
     LEECH_LOG_ID = ''
     
