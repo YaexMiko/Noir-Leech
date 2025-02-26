@@ -233,7 +233,7 @@ class WZMLStyle:
 
     ###--------BUTTONS-------
     PREVIOUS = '⏪'
-    REFRESH = '𝗟𝗶𝗼𝗡𝗟𝗲𝗲𝗖𝗵'
+    REFRESH = '𝚈𝚊𝚎 𝙼𝚒𝚔𝚘'
     NEXT = '⏭️'
     # ---------------------
 
