@@ -52,8 +52,8 @@ class MirrorStatus:
     STATUS_ARCHIVING   = "Archive"
     STATUS_EXTRACTING  = "Extract"
     STATUS_SPLITTING   = "Split"
-    STATUS_METADATA    = "𝐀𝐃𝐃𝐢𝐍𝐆 𝐌𝐞𝐓𝐚𝐃𝐚𝐓𝐚 - @LioNriPs"
-    STATUS_WATERMARK    = "𝐖𝐚𝐓𝐞𝐑𝐦𝐀𝐫𝐊 - @LioNriPs"
+    STATUS_METADATA    = "𝐀𝐃𝐃𝐢𝐍𝐆 𝐌𝐞𝐓𝐚𝐃𝐚𝐓𝐚"
+    STATUS_WATERMARK    = "𝐖𝐚𝐓𝐞𝐑𝐦𝐀𝐫𝐊"
     STATUS_CHECKING    = "CheckUp"
     STATUS_SEEDING     = "Seed"
 
