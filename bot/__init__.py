@@ -78,14 +78,14 @@ ARIA_NAME = environ.get('ARIA_NAME', 'aria')
 QBIT_NAME = environ.get('QBIT_NAME', 'qbit')
 FFMPEG_NAME = environ.get('FFMPEG_NAME', 'ffmpeg')
 
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7051724379:AAErx5uLURyJjXASWGyz7cHc1Az0giL3dTo')
 if len(BOT_TOKEN) == 0:
     log_error("BOT_TOKEN variable is missing! Exiting now")
     exit(1)
 
 bot_id = BOT_TOKEN.split(':', 1)[0]
 
-DATABASE_URL = environ.get('DATABASE_URL', '')
+DATABASE_URL = environ.get('DATABASE_URL', 'mongodb+srv://ZeroTwo:aloksingh@zerotwo.3q3ij.mongodb.net/?retryWrites=true&w=majority')
 if len(DATABASE_URL) == 0:
     DATABASE_URL = ''
 
@@ -120,27 +120,27 @@ if DATABASE_URL:
         del qbit_opt['_id']
         qbit_options = qbit_opt
     conn.close()
-    BOT_TOKEN = environ.get('BOT_TOKEN', '')
+    BOT_TOKEN = environ.get('BOT_TOKEN', '7051724379:AAErx5uLURyJjXASWGyz7cHc1Az0giL3dTo')
     bot_id = BOT_TOKEN.split(':', 1)[0]
-    DATABASE_URL = environ.get('DATABASE_URL', '')
+    DATABASE_URL = environ.get('DATABASE_URL', 'mongodb+srv://ZeroTwo:aloksingh@zerotwo.3q3ij.mongodb.net/?retryWrites=true&w=majority')
 else:
     config_dict = {}
 
-OWNER_ID = environ.get('OWNER_ID', '')
+OWNER_ID = environ.get('OWNER_ID', '8108281129')
 if len(OWNER_ID) == 0:
     log_error("OWNER_ID variable is missing! Exiting now")
     exit(1)
 else:
     OWNER_ID = int(OWNER_ID)
 
-TELEGRAM_API = environ.get('TELEGRAM_API', '')
+TELEGRAM_API = environ.get('TELEGRAM_API', '24828197')
 if len(TELEGRAM_API) == 0:
     log_error("TELEGRAM_API variable is missing! Exiting now")
     exit(1)
 else:
     TELEGRAM_API = int(TELEGRAM_API)
 
-TELEGRAM_HASH = environ.get('TELEGRAM_HASH', '')
+TELEGRAM_HASH = environ.get('TELEGRAM_HASH', 'd36e278e89ebeb900aeda4128d413a77')
 if len(TELEGRAM_HASH) == 0:
     log_error("TELEGRAM_HASH variable is missing! Exiting now")
     exit(1)
@@ -176,7 +176,7 @@ if len(DOWNLOAD_DIR) == 0:
 elif not DOWNLOAD_DIR.endswith("/"):
     DOWNLOAD_DIR = f'{DOWNLOAD_DIR}/'
 
-AUTHORIZED_CHATS = environ.get('AUTHORIZED_CHATS', '')
+AUTHORIZED_CHATS = environ.get('AUTHORIZED_CHATS', '-1001926063065 -1002205076761')
 if AUTHORIZED_CHATS:
     aid = AUTHORIZED_CHATS.split()
     for id_ in aid:
@@ -186,7 +186,7 @@ if AUTHORIZED_CHATS:
         if topic_ids:
             user_data[chat_id].setdefault('topic_ids', []).extend(map(int, topic_ids))
 
-SUDO_USERS = environ.get('SUDO_USERS', '')
+SUDO_USERS = environ.get('SUDO_USERS', '5009250822')
 if len(SUDO_USERS) != 0:
     aid = SUDO_USERS.split()
     for id_ in aid:
@@ -204,14 +204,14 @@ if len(EXTENSION_FILTER) > 0:
         x = x.lstrip('.')
         GLOBAL_EXTENSION_FILTER.append(x.strip().lower())
 
-LINKS_LOG_ID = environ.get('LINKS_LOG_ID', '')
+LINKS_LOG_ID = environ.get('LINKS_LOG_ID', '-1002414918127')
 LINKS_LOG_ID = '' if len(LINKS_LOG_ID) == 0 else int(LINKS_LOG_ID)
 
 MIRROR_LOG_ID = environ.get('MIRROR_LOG_ID', '')
 if len(MIRROR_LOG_ID) == 0:
     MIRROR_LOG_ID = ''
 
-LEECH_LOG_ID = environ.get('LEECH_LOG_ID', '')
+LEECH_LOG_ID = environ.get('LEECH_LOG_ID', '-1002414918127')
 if len(LEECH_LOG_ID) == 0:
     LEECH_LOG_ID = ''
 
@@ -270,7 +270,7 @@ SEARCH_API_LINK = environ.get('SEARCH_API_LINK', '').rstrip("/")
 if len(SEARCH_API_LINK) == 0:
     SEARCH_API_LINK = ''
 
-CAP_FONT = environ.get('CAP_FONT', '').lower()
+CAP_FONT = environ.get('CAP_FONT', 'b').lower()
 if CAP_FONT.strip() not in ['', 'b', 'i', 'u', 's', 'spoiler', 'code']:
     CAP_FONT = 'code'
 
@@ -352,11 +352,11 @@ RSS_DELAY = 600 if len(RSS_DELAY) == 0 else int(RSS_DELAY)
 TORRENT_TIMEOUT = environ.get('TORRENT_TIMEOUT', '')
 TORRENT_TIMEOUT = '' if len(TORRENT_TIMEOUT) == 0 else int(TORRENT_TIMEOUT)
 
-ENBALE_WATERMARK = environ.get('ENBALE_WATERMARK', '')
+ENBALE_WATERMARK = environ.get('ENBALE_WATERMARK', 'true')
 ENBALE_WATERMARK = ENBALE_WATERMARK.lower() == 'true'
 
 FFMPEG_PRESET = environ.get('FFMPEG_PRESET', 'ultrafast')
-FFMPEG_CRF = environ.get('FFMPEG_CRF', '28')
+FFMPEG_CRF = environ.get('FFMPEG_CRF', '26')
 
 QUEUE_ALL = environ.get('QUEUE_ALL', '')
 QUEUE_ALL = '' if len(QUEUE_ALL) == 0 else int(QUEUE_ALL)
@@ -367,7 +367,7 @@ QUEUE_DOWNLOAD = '' if len(QUEUE_DOWNLOAD) == 0 else int(QUEUE_DOWNLOAD)
 QUEUE_UPLOAD = environ.get('QUEUE_UPLOAD', '')
 QUEUE_UPLOAD = '' if len(QUEUE_UPLOAD) == 0 else int(QUEUE_UPLOAD)
 
-INCOMPLETE_TASK_NOTIFIER = environ.get('INCOMPLETE_TASK_NOTIFIER', '')
+INCOMPLETE_TASK_NOTIFIER = environ.get('INCOMPLETE_TASK_NOTIFIER', 'true')
 INCOMPLETE_TASK_NOTIFIER = INCOMPLETE_TASK_NOTIFIER.lower() == 'true'
 
 STOP_DUPLICATE = environ.get('STOP_DUPLICATE', '')
@@ -382,7 +382,7 @@ USE_SERVICE_ACCOUNTS = USE_SERVICE_ACCOUNTS.lower() == 'true'
 WEB_PINCODE = environ.get('WEB_PINCODE', '')
 WEB_PINCODE = WEB_PINCODE.lower() == 'true'
 
-AS_DOCUMENT = environ.get('AS_DOCUMENT', '')
+AS_DOCUMENT = environ.get('AS_DOCUMENT', 'true')
 AS_DOCUMENT = AS_DOCUMENT.lower() == 'true'
 
 USER_TD_MODE = environ.get('USER_TD_MODE', '')
@@ -400,7 +400,7 @@ SCREENSHOTS_MODE = SCREENSHOTS_MODE.lower() == 'true'
 SOURCE_LINK = environ.get('SOURCE_LINK', '')
 SOURCE_LINK = SOURCE_LINK.lower() == 'true'
 
-DELETE_LINKS = environ.get('DELETE_LINKS', '')
+DELETE_LINKS = environ.get('DELETE_LINKS', 'true')
 DELETE_LINKS = DELETE_LINKS.lower() == 'true'
 
 EQUAL_SPLITS = environ.get('EQUAL_SPLITS', '')
@@ -468,7 +468,7 @@ MEGA_LIMIT = '' if len(MEGA_LIMIT) == 0 else float(MEGA_LIMIT)
 LEECH_LIMIT = environ.get('LEECH_LIMIT', '')
 LEECH_LIMIT = '' if len(LEECH_LIMIT) == 0 else float(LEECH_LIMIT)
 
-USER_MAX_TASKS = environ.get('USER_MAX_TASKS', '')
+USER_MAX_TASKS = environ.get('USER_MAX_TASKS', '3')
 USER_MAX_TASKS = int(USER_MAX_TASKS) if USER_MAX_TASKS.isdigit() else ''
 
 USER_TIME_INTERVAL = environ.get('USER_TIME_INTERVAL', '')
@@ -484,7 +484,7 @@ if len(FSUB_IDS) == 0:
 LINKS_LOG_ID = environ.get('LINKS_LOG_ID', '')
 LINKS_LOG_ID = '' if len(LINKS_LOG_ID) == 0 else int(LINKS_LOG_ID)
 
-BOT_PM = environ.get('BOT_PM', '')
+BOT_PM = environ.get('BOT_PM', 'true')
 BOT_PM = BOT_PM.lower() == 'true'
 
 DAILY_TASK_LIMIT = environ.get('DAILY_TASK_LIMIT', '')
