@@ -2,10 +2,10 @@
 class WZMLStyle:
     # ----------------------
     # async def start(client, message) ---> __main__.py
-    ST_BN1_NAME = '🍁 𝐂𝐡𝐚𝐧𝐧𝐞𝐋'
-    ST_BN1_URL = 'https://t.me/LioNriPs'
-    ST_BN2_NAME = '𝐆𝐫𝐨𝐮𝐏 🍁'
-    ST_BN2_URL = 'https://t.me/LioNleeCh'
+    ST_BN1_NAME = 'Repo'
+    ST_BN1_URL = 'https://www.github.com/weebzone/WZML-X'
+    ST_BN2_NAME = Updates''
+    ST_BN2_URL = 'https://t.me/WZML_X'
     ST_MSG = '''<i>This bot can leech all your direct links|files|torrents to Telegram.</i>'''
     ST_BOTPM = '''<i>🕵Now, This bot will send all your files and links here. Start Using ...</i>'''
     ST_UNAUTH = '''<i>⚠️ You Are not authorized user!</i>'''
@@ -62,8 +62,8 @@ class WZMLStyle:
 ┠ <b>☞ Free :</b> {disk_f} 
 ┖ <b>☞ Total :</b> {disk_t}
     
-<a href="https://t.me/LioNleeCh">♥️ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 <b>@LioNriPs</b></a>
-    '''
+<a href="https://t.me/Era_Bot_Support">♥️ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 <b>@Era_Bot_Support</b></a>'''
+
     SYS_STATS = '''┎ <b><i>🛠 OS SYSTEM :</i></b>
 ┠ <b>⏰ OS Uptime :</b> {os_uptime}
 ┠ <b>☢️ OS Version :</b> {os_version}
@@ -85,8 +85,8 @@ class WZMLStyle:
 ┠ <b>☞ Total Core(s) :</b> {total_core}
 ┖ <b>☞ Usabl e CPU(s) :</b> {cpu_use}
 
-<a href="https://t.me/LioNleeCh">♥️ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 <b>@LioNriPs</b></a>
-    '''
+<a href="https://t.me/Era_Bot_Support">♥️ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 <b>@Era_Bot_Support</b></a>'''
+
     REPO_STATS = '''┎ <b><i>🧑‍💻 REPO STATISTICS :</i></b>
 ┠ <b>🤖 Bot Updated :</b> {last_commit}
 ┠ <b>🆔 Current Version :</b> {bot_version}
@@ -94,8 +94,8 @@ class WZMLStyle:
 ┠ <b>📝 Last ChangeLog :</b> {commit_details}
 ┖ <b>💥 REMARKS :</b> <code>{remarks}</code>
  
-<a href="https://t.me/LioNleeCh">♥️ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 <b>@LioNriPs</b></a>
-    '''
+<a href="https://t.me/Era_Bot_Support">♥️ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 <b>@Era_Bot_Support</b></a>'''
+
     BOT_LIMITS = '''┎ <b><i>❗ BOT LIMITATIONS :</i></b>
 ┠ <b>🎯 Direct Limit :</b> {DL} GB
 ┠ <b>🧲 Torrent Limit :</b> {TL} GB
@@ -111,8 +111,8 @@ class WZMLStyle:
 ┠ <b>👤 User Parallel Tasks :</b> {UT}
 ┖ <b>🤖 Bot Parallel Tasks :</b> {BT}
 
-<a href="https://t.me/LioNriPs">♥️ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 <b>@LioNleeCh</b></a>
-    '''
+<a href="https://t.me/Era_Bot_Support">♥️ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 <b>@Era_Bot_Support</b></a>'''
+
     # ---------------------
 
     # async def restart(client, message): ---> __main__.py
@@ -126,7 +126,8 @@ class WZMLStyle:
 ┠ <b>🌐 TimeZone:</b> {timz}
 ┖ <b>🆔 Version:</b> {version}
 
-<a href="https://t.me/LioNleeCh">♥️ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 <b>@LioNriPs</b></a>'''
+<a href="https://t.me/Era_Bot_Support">♥️ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 <b>@Era_Bot_Support</b></a>'''
+
     RESTARTED = '''<b><i>🤖 Bot Restarted! 🎉</i></b>'''
     # ---------------------
 
@@ -276,8 +277,8 @@ class WZMLStyle:
 ➲ <u><b>Available Args:</b></u>
 • <b>-s</b> or <b>-set</b>: Set Directly via Arg
 
-<a href="https://t.me/LioNriPs">♥️ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 <b>@LioNleeCh</b></a>'''
-
+<a href="https://t.me/Era_Bot_Support">♥️ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 <b>@Era_Bot_Support</b></a>'''
+    
     UNIVERSAL = '''㊂ <b><u>Universal Settings : {NAME}</u></b>
 
 ┎<b>📺 YT-DLP Options :</b> <b><code>{YT}</code></b>
@@ -288,7 +289,7 @@ class WZMLStyle:
 ┠<b>📩 Save Mode :</b> <code>{SAVE_MODE}</code>
 ┖<b>🕵️ User Bot PM :</b> <code>{BOT_PM}</code>
 
-<a href="https://t.me/LioNleeCh">♥️ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 <b>@LioNriPs</b></a>'''
+<a href="https://t.me/Era_Bot_Support">♥️ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 <b>@Era_Bot_Support</b></a>'''
 
     MIRROR = '''㊂ <b><u>Mirror/Clone Settings : {NAME}</u></b>
 
@@ -301,7 +302,7 @@ class WZMLStyle:
 ┠<b>📝 Total User TD(s) :</b> <i>{USERTD}</i>
 ┖<b>☁️ Daily Mirror :</b> <code>{DM}</code> per day
 
-<a href="https://t.me/LioNleeCh">♥️ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 <b>@LioNriPs</b></a>'''
+<a href="https://t.me/Era_Bot_Support">♥️ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 <b>@Era_Bot_Support</b></a>'''
 
     LEECH = '''㊂ <b><u>Leech Settings for {NAME}</u></b>
 
@@ -319,4 +320,4 @@ class WZMLStyle:
 ┠<b>📇 Leech Metadata :</b> <code>{METADATA}</code>
 ┠<b>✒️ Leech Watermark :</b> <code>{WATERMARK}</code>
 
-<a href="https://t.me/LioNleeCh">♥️ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 <b>@LioNriPs</b></a>'''
+<a href="https://t.me/Era_Bot_Support">♥️ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 <b>@Era_Bot_Support</b></a>'''
